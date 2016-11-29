@@ -1,0 +1,7 @@
+Profile为在不同环境下使用不同的配置提供了支持：
+1.通过设定Environment的ActvieProfile来设定当前Context需要使用的配置环境。在开发中使用@Profile注解类或这方法，
+达到在不同情况下选择实例化不同的Bean.
+2.通过设定JVM的spring.profiles.active 参数来设置配置环境
+-Dspring.profiles.active="production"
+-Dspring.profiles.active="develop"
+3.web项目设置在Serlet的contextParameter中
