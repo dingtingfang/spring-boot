@@ -9,7 +9,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("awareService")
 public class AwareService implements BeanNameAware,ResourceLoaderAware {
 	
 	private String beanName;
