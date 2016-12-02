@@ -1,0 +1,1 @@
+@WiselyConfiguration 组合注解配置 来代替@Configuration 和       @ComponentScan
