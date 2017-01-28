@@ -1,4 +1,4 @@
-package com.dtf.test;
+package com.dtf.jdk;
 /***
  * Lambda 表达式，也可称为闭包，它是推动 Java 8 发布的最重要新特性
  * Lambda 允许把函数作为一个方法的参数（函数作为参数传递进方法中）。
