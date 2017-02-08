@@ -3,7 +3,6 @@ package com.dtf.jdk;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Supplier;
 
 import com.dtf.jdk.model.Car;
 
