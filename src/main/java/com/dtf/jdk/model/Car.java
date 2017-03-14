@@ -2,7 +2,10 @@ package com.dtf.jdk.model;
 
 import java.util.function.Supplier;
 
-public class Car {
+import com.dtf.jdk.defaultInterface.FourWheeler;
+import com.dtf.jdk.defaultInterface.Vehicle;
+
+public class Car implements Vehicle,FourWheeler{
 	
 	private Integer id;
 	
@@ -39,6 +42,10 @@ public class Car {
 	public void setName(String name) {
 		this.name = name;
 	}
-    
-    
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		Vehicle.super.print();
+	}
 }
