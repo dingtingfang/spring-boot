@@ -6,7 +6,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
+<<<<<<< HEAD
 		<java.version>1.8</java.version>
+=======
+		<java.version>1.7</java.version>
+		<spring-framework.version>4.1.6.RELEASE</spring-framework.version>
+>>>>>>> pounce
 	</properties>
 
 	<dependencies>
@@ -14,7 +19,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.1.6.RELEASE</version>
+			<version>${spring-framework.version}</version>
 		</dependency>
 		<!-- aspectj 支持 -->
 		<dependency>
@@ -46,12 +51,68 @@
 			<scope>provided</scope>
 		</dependency>
 
-	
-		<!-- 其他依賴 -->
+
+		<!-- 其他依赖 -->
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.3</version>
+		</dependency>
+		<!-- sping Test 支持 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+
+
+
+		<!-- j2ee jar -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -68,7 +129,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		
+
 		<resources>
 			<resource>
 				<directory>src/main/java</directory>
@@ -82,4 +143,5 @@
 			</resource>
 		</resources>
 	</build>
+	<packaging>war</packaging>
 </project>
