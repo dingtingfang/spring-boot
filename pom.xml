@@ -6,12 +6,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-<<<<<<< HEAD
 		<java.version>1.8</java.version>
-=======
-		<java.version>1.7</java.version>
 		<spring-framework.version>4.1.6.RELEASE</spring-framework.version>
->>>>>>> pounce
 	</properties>
 
 	<dependencies>
