@@ -11,8 +11,8 @@ public class LinuxCondition implements Condition {
 
 	@Override
 	public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
-		// TODO Auto-generated method stub
-		return context.getEnvironment().getProperty("os.name").contains("linux");
+		System.out.println(context.getEnvironment().getProperty("os.name").contains("Linux"));
+		return context.getEnvironment().getProperty("os.name").contains("Linux");
 	}
 
 }
