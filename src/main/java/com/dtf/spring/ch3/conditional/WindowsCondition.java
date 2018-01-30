@@ -11,7 +11,7 @@ public class WindowsCondition implements Condition{
 
 	@Override
 	public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
-		// TODO Auto-generated method stub
+		System.out.println("windowCondtion 执行 matches方法："+context.getEnvironment().getProperty("os.name"));
 		return context.getEnvironment().getProperty("os.name").contains("Windows");
 	}
 

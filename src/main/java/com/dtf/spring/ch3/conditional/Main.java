@@ -8,7 +8,7 @@ public class Main {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConditionConfig.class);
 		
 		ListService listService = context.getBean(ListService.class);
-		System.out.println(context.getEnvironment().getProperty("os.name")+"系统命令如下:"+listService.showList());
+		System.out.println(context.getEnvironment().getProperty("os.name")+"系统命令如下:"+listService.showListCmd());
 
 	}
 
